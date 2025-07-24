@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feudal - Portifolio</title>
+    <meta name="description" content="portifolio de Caio Feudal - Front-End Developer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                            <circle cx="12" cy="13" r="3"></circle>
+                        </svg>
+                        <span class="logo-text">Caio Feudal</span>
+                    </div>
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Início</a>
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                        <a href="galeria.html" class="nav-link">Trabalhos</a>
+                        <a href="contato.html" class="nav-link active">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <!-- Header -->
+            <header class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Contact</h1>
+                    <p class="page-description">
+                        Looking for a developer? Let’s work together! I'm available for freelance or collaborative projects!
+                    </p>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <section class="contact-info">
+                        <div class="contact-card">
+                            <h2 class="contact-title">Informações de Contato</h2>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon blue-gradient">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">E-mail</h3>
+                                    <p class="contact-value">Caiofeudal2006@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon purple-gradient">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Telefone</h3>
+                                    <p class="contact-value">(41) 99778-4682)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon pink-gradient">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Form -->
+                    <section class="contact-form-section">
+                        <div class="contact-card">
+                            <h2 class="contact-title">Envie sua Mensagem</h2>
+                            
+                            <!-- Status Messages -->
+                            <div id="successMessage" class="message success-message" style="display: none;">
+                                <svg class="message-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <div>
+                                    <h4 class="message-title">Mensagem enviada com sucesso!</h4>
+                                    <p class="message-text">Entrarei em contato em breve.</p>
+                                </div>
+                            </div>
+
+                            <div id="errorMessage" class="message error-message" style="display: none;">
+                                <svg class="message-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg>
+                                <div>
+                                    <h4 class="message-title">Erro ao enviar mensagem</h4>
+                                    <p class="message-text">Verifique os dados e tente novamente.</p>
+                                </div>
+                            </div>
+
+                            <form id="contactForm" class="contact-form">
+                                <!-- Nome -->
+                                <div class="form-group">
+                                    <label for="nome" class="form-label">Nome *</label>
+                                    <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo">
+                                    <div class="error-text" id="nomeError"></div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label for="email" class="form-label">E-mail *</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com">
+                                    <div class="error-text" id="emailError"></div>
+                                </div>
+
+                                <!-- Assunto -->
+                                <div class="form-group">
+                                    <label for="assunto" class="form-label">Assunto *</label>
+                                    <input type="text" id="assunto" name="assunto" class="form-input" placeholder="Projeto em mente?">
+                                    <div class="error-text" id="assuntoError"></div>
+                                </div>
+
+                                <!-- Mensagem -->
+                                <div class="form-group">
+                                    <label for="mensagem" class="form-label">Mensagem * (mínimo 20 caracteres)</label>
+                                    <textarea id="mensagem" name="mensagem" rows="6" class="form-input form-textarea" placeholder="De um resumo do projeto"></textarea>
+                                    <div class="form-footer">
+                                        <div class="error-text" id="mensagemError"></div>
+                                        <div class="char-counter">
+                                            <span id="charCount">0</span>/20 caracteres
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" id="submitBtn" class="form-submit">
+                                    <svg class="submit-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                                    </svg>
+                                    <span id="submitText">Enviar Mensagem</span>
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
